@@ -143,6 +143,11 @@ form .btn{justify-self:start}
 footer{background:var(--navy);color:#a9b9c1;padding:30px 0;font-size:.92rem}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 footer a{color:#fff;text-decoration:none}
+footer .contacts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px 32px}
+footer .contacts li{display:flex;flex-direction:column;line-height:1.3}
+footer .contacts span{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+html[lang="ar"] footer .contacts span{letter-spacing:0;font-size:.85rem}
+footer .contacts b{color:#fff;font-weight:500;font-size:1rem}
 
 .wa{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));inset-inline-end:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 20px -8px #0007}
 .wa svg{width:28px;height:28px;fill:#fff}
@@ -184,6 +189,7 @@ footer a{color:#fff;text-decoration:none}
   .brand b{font-size:1.4rem}
   form{padding:20px}
   form .btn,.actions .btn{flex:1 1 100%}
+  footer{padding-bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
