@@ -1,4 +1,24 @@
 (function () {
+  // Fallback page transition for browsers without native cross-page transitions
+  var root = document.documentElement;
+  window.addEventListener('pageshow', function () { root.classList.remove('leaving'); });
+  if (!root.classList.contains('no-vt')) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (a.target === '_blank' || a.hasAttribute('download')) return;
+    var url = new URL(a.href, location.href);
+    if (url.origin !== location.origin) return;
+    if (url.pathname === location.pathname && url.hash) return; // same-page jump
+    e.preventDefault();
+    root.classList.add('leaving');
+    setTimeout(function () { location.href = url.href; }, 180);
+  });
+})();
+
+(function () {
   // ---- ports popover on the map ----
   var inner = document.querySelector('.map-inner');
   var dataEl = document.getElementById('ports-data');
