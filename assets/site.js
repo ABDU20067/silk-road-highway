@@ -97,8 +97,8 @@
     var f = form.elements;
     var type = f.type.options[f.type.selectedIndex].text;
     var L = ar
-      ? ['مرحباً Silk Road Highway، أريد عرض سعر شحن.', 'الاسم', 'الهاتف', 'الشحنة', 'من', 'إلى', 'التفاصيل']
-      : ['Hello Silk Road Highway, I’d like a shipping quote.', 'Name', 'Phone', 'Shipping', 'From', 'To', 'Details'];
+      ? ['مرحباً Silk Highway، أريد عرض سعر شحن.', 'الاسم', 'الهاتف', 'الشحنة', 'من', 'إلى', 'التفاصيل']
+      : ['Hello Silk Highway, I’d like a shipping quote.', 'Name', 'Phone', 'Shipping', 'From', 'To', 'Details'];
     var msg = [L[0], '',
       L[1] + ': ' + f.name.value,
       L[2] + ': ' + f.phone.value,

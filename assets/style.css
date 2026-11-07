@@ -31,8 +31,8 @@ header{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:1px
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand svg{width:54px;height:43px;flex:none}
 .brand .words{display:flex;flex-direction:column;line-height:1;font-family:"Barlow Condensed",sans-serif}
-.brand b{font-size:1.6rem;font-weight:700;letter-spacing:.03em;color:#fff}
-.brand span{font-size:.72rem;font-weight:600;letter-spacing:.62em;color:var(--gold);margin-top:3px}
+.brand b{font-size:1.75rem;font-weight:700;letter-spacing:.2em;color:#fff}
+.brand span{font-size:.78rem;font-weight:600;letter-spacing:.42em;color:var(--gold);margin-top:3px}
 .nav ul{display:flex;gap:26px;list-style:none;margin:0 0 0 auto;padding:0}
 html[dir="rtl"] .nav ul{margin:0 auto 0 0}
 .nav ul a{text-decoration:none;color:#b9c7ce;font-size:.95rem}
@@ -187,7 +187,7 @@ footer .contacts b{color:#fff;font-weight:500;font-size:1rem}
 @media (max-width:520px){
   .row{grid-template-columns:1fr}
   .nav .btn{display:none}
-  .brand b{font-size:1.4rem}
+  .brand b{font-size:1.5rem}
   form{padding:20px}
   form .btn,.actions .btn{flex:1 1 100%}
   footer{padding-bottom:96px}
