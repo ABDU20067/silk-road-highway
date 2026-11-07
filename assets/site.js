@@ -106,7 +106,7 @@
       L[4] + ': ' + f.from.value,
       L[5] + ': ' + f.to.value,
       L[6] + ': ' + f.details.value].join('\n');
-    var url = 'https://wa.me/97455897286?text=' + encodeURIComponent(msg);
+    var url = 'https://wa.me/97450901094?text=' + encodeURIComponent(msg);
     var w = window.open(url, '_blank');
     if (w) w.opener = null; else location.href = url;
   });
