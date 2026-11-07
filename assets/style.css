@@ -29,7 +29,7 @@ p{margin:0}
 header{position:sticky;top:0;z-index:50;background:var(--navy);border-bottom:1px solid #ffffff14}
 .nav{display:flex;align-items:center;gap:28px;height:74px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand svg{width:50px;height:40px;flex:none}
+.brand svg{width:54px;height:43px;flex:none}
 .brand .words{display:flex;flex-direction:column;line-height:1;font-family:"Barlow Condensed",sans-serif}
 .brand b{font-size:1.6rem;font-weight:700;letter-spacing:.03em;color:#fff}
 .brand span{font-size:.72rem;font-weight:600;letter-spacing:.62em;color:var(--gold);margin-top:3px}
@@ -139,6 +139,7 @@ form{border:1px solid var(--line);border-radius:10px;padding:30px;display:grid;g
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px #c4a06a33}
 .field textarea{min-height:110px;resize:vertical}
 form .btn{justify-self:start}
+.form-note{font-size:.85rem;color:var(--muted);line-height:1.5}
 
 footer{background:var(--navy);color:#a9b9c1;padding:30px 0;font-size:.92rem}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
