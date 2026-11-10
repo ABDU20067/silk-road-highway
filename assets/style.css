@@ -69,13 +69,14 @@ html[lang="ar"] .eyebrow{letter-spacing:0;font-family:var(--font);font-size:.95r
 /* map */
 .map{overflow-x:auto;margin-inline:-20px}
 
-.map-inner{position:relative;min-width:760px}
+.map-inner{position:relative;min-width:900px}
 .map svg{display:block;width:100%;height:auto}
 .map .grat{fill:none;stroke:#ffffff;stroke-opacity:.06;stroke-width:.7}
 .map .other{fill:#163746;stroke:#22485a;stroke-width:.6}
 .map .side{fill:#6e5233}
 .map .top{fill:#ead3a8}
 .map .edge{fill:none;stroke:#8f7553;stroke-width:.6;stroke-opacity:.8}
+.map .disputed{fill:none;stroke:#8f7553;stroke-width:.8;stroke-dasharray:3 3;pointer-events:none}
 .map .hit{fill:transparent;cursor:pointer;transition:fill .15s ease}
 .map .hit.active,.map .hit:hover{fill:#c4a06a55}
 .map text{font-family:"Barlow Condensed","IBM Plex Sans Arabic",sans-serif;font-weight:600}
